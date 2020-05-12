@@ -17,6 +17,7 @@ RUN apt-get dist-upgrade --assume-yes
 RUN apt-get install --assume-yes --no-install-recommends --no-install-suggests \
     elixir \
     esl-erlang \
+    inotify-tools \
     xz-utils 
 
 RUN curl -SLO "http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
